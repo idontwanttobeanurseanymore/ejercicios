@@ -1,13 +1,17 @@
 'use strict';
+//.querySelector
 const input = document.querySelector('.js_input');
 let dogAge = parseInt(input.value)
 const btn = document.querySelector('.js_btn');
 const result = document.querySelector('.js_result');
 let humanAge = parseInt(result.value)
-
+//funciones
+//Eventos
+//codigo que lanza el evento
 btn.addEventListener('click', (ev) => {
     ev.preventDefault();
     checkAge() // primero llamas la función
+    // puedes poner la variable directamente (aqui no interesa)
     result.innerHTML = `Edad humana: ${humanAge}`
     //con el resultado de la función, cambias el texto
 })
